@@ -1,12 +1,7 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
-	// var card string = "Ace of Spades"
-	car := "Ace of Spades"
-
-	fmt.Println(card)
+	cards := newDeck()
+	cards.shuffle()
+	cards.print()
 }
